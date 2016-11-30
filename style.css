@@ -1,0 +1,373 @@
+/* ==================================================
+   CSS Imports
+================================================== */
+
+@import url("reset.css");
+@import url("menu.css");
+@import url("typography.css");
+@import url("columns.css");
+
+/* ==================================================
+   Icon Fonts
+================================================== */
+
+@import url("fonts/fontawesome/font-awesome.css");
+
+/* ==================================================
+   Google Fonts
+================================================== */
+
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600,600italic,700,700italic,900,900italic");
+
+/* ==================================================
+   Global Styles
+================================================== */
+
+*
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html
+{
+	height: 100%;
+	overflow: auto;
+	
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body
+{
+	font-family: "Source Sans Pro", Arial, Verdana, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	color: #444;
+	background: #624C5E;
+	
+	text-rendering: optimizeLegibility;
+	vertical-align: baseline;
+}
+
+::selection
+{
+	background: #624C5E;
+	color: #FFF;
+}
+
+::-moz-selection
+{
+	background: #624C5E;
+	color: #FFF;
+}
+
+a
+{
+	color: #624C5E;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #222;
+}
+
+img
+{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+}
+
+/* ==================================================
+   Images
+================================================== */
+
+img
+{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+}
+
+	img.imgright
+	{
+		float: right;
+		width: 100%;
+		max-width: 300px;
+		margin: 0 0 20px 20px;
+	}
+	
+	img.imgleft
+	{
+		float: left;
+		width: 100%;
+		max-width: 300px;
+		margin: 0 20px 20px 0;
+	}
+	
+/* ==================================================
+   Backgrounds
+================================================== */
+
+.bgimg
+{
+	background: url("Images/sew.jpg") no-repeat fixed center;
+	background-size: cover;
+	padding: 0 !important;
+}
+
+.overlay
+{
+	background: url(../images/bg-transparent.png) repeat;
+	padding: 0 30px;
+}
+
+.bg1
+{
+	background-color: #FFF;
+}
+
+.bg2
+{
+	background-color: #EEE;
+}
+
+/* ==================================================
+   Layout Styles
+================================================== */
+
+.container
+{
+	width: 100%;
+	padding: 0 30px;
+	min-width: 280px;
+	line-height: 26px;
+}
+
+	.container .bodycontainer
+	{
+		margin: 0 auto;
+		width: 100%;
+		max-width: 1140px;
+	}
+
+/* ==================================================
+   Sections
+================================================== */
+
+#headercont
+{
+	padding: 120px 0;
+	text-align: left;
+}
+
+	#headercont h1
+	{
+		color: #FFF;
+		font-size: 70px;
+		line-height: 70px;
+		font-weight: 600;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+	}
+	
+	#headercont p
+	{
+		color: #FFF;
+		font-size: 21px;
+		margin-bottom: 30px;
+		font-style: italic;
+	}
+	
+		#headercont p:last-child
+		{
+			margin-bottom: 0;
+		}
+		
+	#headercont p .button
+	{
+		position: relative;
+		display: inline-block;
+		padding: 10px 16px;
+		margin: 0;
+		width: auto;
+		font-size: 21px;
+		text-transform: uppercase;
+		font-weight: 300;
+		cursor: pointer;
+		background: none;
+		border: none;
+		outline: none;
+		font-style: normal;
+		text-align: left;
+		background: #624C5E;
+		color: #FFF !important;
+	}
+
+		#headercont p .button:after
+		{
+			content: '';
+			position: absolute;
+			z-index: -1;
+		}
+
+		#headercont p .button:hover
+		{
+			background: #725E6E;
+			color: #FFF !important;
+		}
+
+			#headercont p .button:active
+			{
+				top: 2px;
+			}
+
+#maincont
+{
+	padding: 40px 0;
+}
+
+#footercont
+{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	color: #999;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+	#footercont p
+	{
+		margin: 0;
+	}
+
+	#footercont a
+	{
+		color: #D8D2D7;
+	}
+	
+	#footercont a:hover
+	{
+		color: #FFF;
+	}
+	
+		#footercont a.scrolltop
+		{
+			font-size: 42px;
+		}
+	
+		#footercont #socialmedia ul
+		{
+			margin: 0 0 20px 0;
+		}
+
+		#footercont #socialmedia ul li
+		{
+			display: inline-block;
+			list-style-type: none;
+			margin: 0 12px 0 0;
+			padding: 0;
+		}
+
+			#footercont #socialmedia ul li a
+			{
+				font-size: 27px;
+			}
+
+/* ==================================================
+   Responsive Media Queries - Tablets
+================================================== */
+
+@media screen and (max-width: 768px)
+{
+	
+	.bgimg
+	{
+		background: url("../images/bg-tobgimg.jpg") no-repeat scroll center;
+	}
+	
+	.container, .overlay
+	{
+		padding: 0 25px;
+	}
+	
+	img.imgright
+	{
+		float: none;
+		width: 100%;
+		max-width: 300px;
+		margin: 0 0 20px 0;
+	}
+	
+	img.imgleft
+	{
+		float: none;
+		width: 100%;
+		max-width: 300px;
+		margin: 0 0 20px 0;
+	}
+		
+	#headercont
+	{
+		padding: 80px 0;
+	}
+
+		#headercont h1
+		{
+			font-size: 52px;
+			line-height: 52px;
+			margin-bottom: 10px;
+		}
+		
+		#headercont p
+		{
+			font-size: 19px;
+			margin-bottom: 20px;
+		}
+			
+		#headercont p .button
+		{
+			padding: 9px 12px 7px 12px;
+			font-size: 21px;
+		}
+		
+	#footercont
+	{
+		text-align: left;
+	}
+	
+		#footercont a.scrolltop
+		{
+			display: block;
+			margin: 20px 0 0 0;
+		}
+		
+		#footercont #socialmedia ul li
+		{
+			margin: 0 20px 0 0;
+		}
+	
+}
+
+/* ==================================================
+   Responsive Media Queries - Mobiles
+================================================== */
+
+@media screen and (max-width: 480px)
+{		
+	
+	.container, .overlay
+	{
+		padding: 0 20px;
+	}
+	
+	#headercont
+	{
+		padding: 60px 0;
+	}
+	
+}
+
