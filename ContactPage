@@ -59,7 +59,23 @@
 		
 		<h2>Welcome to the DU Sew Soc website!</h2>
 		<img class="imgright" alt="" src="600x450.jpg" />
-        <p><strong>Since you're here, you must be interested in finding more about Sewing Society! If so, you've come to the right place. Here you'll find up to date information on all the events we run, along with help on buying supplies and getting in touch with us.</em></p>
+		<div class="contactboxdiv"><form id="contact_form" action="form-to-email.php" method="POST" enctype="multipart/form-data">
+	<div class="row">
+		<label for="name">Your name:</label><br />
+		<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+	</div>
+	<div class="row">
+		<label for="email">Your email:</label><br />
+		<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+	</div>
+	<div class="row">
+		<label for="message">Your message:</label><br />
+		<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+	</div>
+	<input id="submit_button" type="submit" value="Send email" />
+</form>	</div>
+
+        <p><strong>Feel free to email our exec team using the form below. We look forward to hearing from you!</em></p>
 		<hr />
 		
 		<div class="grid">
