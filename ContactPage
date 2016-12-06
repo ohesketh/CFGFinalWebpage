@@ -46,8 +46,8 @@
         <ul class="menu">
             <li><a title="" href="index.html">Home</a></li>
             <li><a title="" href="events.html">Events</a></li>
-            <li><a title="" href="#">Meet the Exec</a></li>
-            <li><a title="" href="#">Buying Supplies</a></li>
+            <li><a title="" href="exec.html">Meet the Exec</a></li>
+            <li><a title="" href="supplies.html">Buying Supplies</a></li>
             <li class="active"><a title="" href="#">Contact Us</a></li>
         </ul>
 	</div>
