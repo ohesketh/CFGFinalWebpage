@@ -115,7 +115,7 @@ img
 
 .bgimg
 {
-	background: url("Images/sew.jpg") no-repeat fixed center;
+	background: url("Buttons-background.jpg") no-repeat fixed center;
 	background-size: cover;
 	padding: 0 !important;
 }
@@ -168,6 +168,11 @@ img
 	#headercont h1
 	{
 		color: #FFF;
+		text-shadow:
+    	-2px -2px 0 #000,
+    	2px -2px 0 #000,
+   	 	-2px 2px 0 #000,
+   		2px 2px 0 #000;
 		font-size: 70px;
 		line-height: 70px;
 		font-weight: 600;
@@ -178,6 +183,11 @@ img
 	#headercont p
 	{
 		color: #FFF;
+		text-shadow:
+    	-2px -2px 0 #000,
+    	2px -2px 0 #000,
+   	 	-2px 2px 0 #000,
+   		2px 2px 0 #000;
 		font-size: 21px;
 		margin-bottom: 30px;
 		font-style: italic;
