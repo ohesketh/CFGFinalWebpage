@@ -3,7 +3,6 @@
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"><![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"><![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"><![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en"><!--<![endif]-->
 <head>
@@ -13,11 +12,6 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144.png">
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114.png">
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72.png">
-<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57.png">
-<link rel="shortcut icon" href="favicon.png">
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="144.png">
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="114.png">
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="touch-icon-72.png">
@@ -38,8 +32,6 @@
 <div class="container bgimg clearfix">
 	<div class="overlay clearfix">
 		<div id="headercont" class="bodycontainer clearfix">
-		  <h1>Contact Us</h1>
-		  <p> We are the newly formed Durham University Sewing society! We will be taking suggestions as to what people want to try out and see happening. Check out this page regularly to keep updated on all our latest events and projects! </p>
 		  <h1>Durham university sewing society</h1>
 		  <p>We are the newly formed Durham University Sewing society! We will be taking suggestions as to what people want to try out and see happening. Check out this page regularly to keep updated on all our latest events and projects!</p>
 			<p><a class="button" title="" href="http://community.dur.ac.uk/sew.soc/">Sign Up</a></p>
@@ -58,11 +50,6 @@
             <li><a title="" href="exec.html">Meet the Exec</a></li>
             <li><a title="" href="buyingsupplies.html">Buying Supplies</a></li>
             <li class="active"><a title="" href="#">Contact Us</a></li>
-            <li><a title="Home" href="index.html">Home</a></li>
-            <li><a title="Events" href="events.html">Events</a></li>
-            <li><a title="Exec" href="exec.html">Meet the Exec</a></li>
-            <li><a title="Supplies" href="supplies.html">Buying Supplies</a></li>
-            <li class="active"><a title="Contact" href="#">Contact Us</a></li>
 
         </ul>
 	</div>
@@ -74,37 +61,23 @@
 
 		<h2>Send Us An Email!</h2>
 	    <p><strong>If you have any questions about Durham Sewing Society, feel free to send us an email using the form below...</em></p>
-	 <div align="center"> 
-	<div class="contactboxdiv"><form id="contact_form" action="form-to-email.php" method="POST" enctype="multipart/form-data">
-		<div class="row">
+	 
+	 	<div align="center"> 
 
-		<h2>Welcome to the DU Sew Soc website!</h2>
+		<form action="mail_handler.php" method="post">
+		First Name: <br>
+		<input type="text" name="first_name"><br>
+		Last Name: <br>
+		<input type="text" name="last_name"><br>
+		Email: <br>
+		<input type="text" name="email"><br>
+		Message:<br>
+		<textarea rows="5" name="message" cols="50"></textarea>
+		<br>
+		<input type="submit" name="submit" value="Submit">
+		</form>
 
-        <p><strong>Feel free to email our exec team using the form below. We look forward to hearing from you!</em></p>
-		<div class="contactboxdiv"><form id="contact_form" action="form-to-email.php" method="POST" enctype="multipart/form-data">
-	<div class="row">
-
-		<label for="name">Your name:</label><br />
-		<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-	</div>
-	<div class="row">
-		<label for="email">Your email:</label><br />
-		<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-	</div>
-	<div class="row">
-		<label for="message">Your message:</label><br />
-		<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-	</div>
-	<input id="submit_button" type="submit" value="Send email" />
-	</form>	</div> </div>
-	
-</form>	</div>
-
-	<hr />
-		<hr />
-		
-		
-		</div>
+		<hr />	
 	
 	</div>
 </div>
@@ -121,31 +94,6 @@
 	<img title="Instagram" alt="RSS" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" width="35" height="35" />
 	</a>
 </div>
-						
-
-<div class="container clearfix">
-	<div id="footercont" class="bodycontainer clearfix">
-
-		<div class="grid">
-			<div class="column-10">
-				<div id="socialmedia" class="clearfix">
-					<ul>
-						<li><a title="" href="#" rel="external"><span class="fa fa-facebook"></span></a></li>
-						<li><a title="" href="#" rel="external"><span class="fa fa-twitter"></span></a></li>
-						<li><a title="" href="#" rel="external"><span class="fa fa-google-plus"></span></a></li>
-						<li><a title="" href="#" rel="external"><span class="fa fa-linkedin"></span></a></li>
-						<li><a title="" href="#" rel="external"><span class="fa fa-pinterest"></span></a></li>
-					</ul>
-
-			<div class="column-2 textright">
-				<p><a class="scrolltop" title="back to top" href="#pagetop"><span class="fa fa-angle-double-up"></span></a></p>
-			</div>
-		</div>
-
-	</div>
-</div>
-    
 
 </body>
-
 </html>

@@ -98,3 +98,7 @@
 	
 }
 
+.column-4 {
+  background: url(images/checks-pink-white-seamless.jpg);
+  background-attachment: fixed;
+  overflow: hidden;
