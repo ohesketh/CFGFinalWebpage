@@ -6,6 +6,35 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
 <head>
 
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
 
 <style>
 h2
@@ -54,15 +83,9 @@ h2
         </div>
         <ul class="menu">
             <li class="active"><a title="" href="#">Home</a></li>
-
-            <li><a title="Events" href="events.html">Events</a></li>
-            <li><a title="" href="exec.html">Meet the Exec</a></li>
-            <li><a title="" href="#">Buying Supplies</a></li>
-
            	<li><a title="" href="events.html">Events</a></li>
             <li><a title="" href="exec.html">Meet the Exec</a></li>
             <li><a title="" href="supplies.html">Buying Supplies</a></li>
-
             <li><a title="" href="ContactPage.html">Contact Us</a></li>
         </ul>
 	</div>
@@ -74,7 +97,41 @@ h2
 		<h2>Welcome to the DU Sew Soc website!</h2>
 
         <p><strong>Since you're here, you must be interested in finding more about Sewing Society! If so, you've come to the right place. Here you'll find up to date information on all the events we run, along with help on buying supplies and getting in touch with us. </strong></em></p>
-		</hr>
+		
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/DSC_1603.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/DSC_1607.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/DSC_1608.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+         </div>
+         <br>
+
+         <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+
+        </hr>
+
 	</div>
 </div>
 
@@ -113,6 +170,11 @@ h2
 
 	</div>
 </div>
+
+ 
+<br>
+
+
 
 
 </body>
