@@ -81,7 +81,7 @@ function createCookie(name,value)
 {
 
       	var date = new Date();
-        date.setTime(date.getTime()+(10*1000)); //I've made the expiration of the cookie 10 seconds so you can test the cookies, if you want it a day replace it with 24*60*60*1000
+        date.setTime(date.getTime()+(24*60*60*1000)); //I've made the expiration of the cookie a day:24*60*60*1000
         var expires = "; expires="+date.toGMTString();
     	document.cookie = name+"="+value+expires+"; path=/";
 }
