@@ -1,3 +1,6 @@
+/**This CSS file sets the widths etc of the columns we've used on the events and supplies pages. At the bottom, 
+we've used the second classes of the various events to put backgrounds behind that text**/
+
 [class*='column']
 {
 	float: left;
@@ -97,7 +100,7 @@
 }
 
 .column-4.halloween {
-  background: url(Images/halloweenback.png);
+  background: url(https://ohesketh.github.io/CFGFinalWebpage/Images/halloweenback.png);
   background-attachment: scroll;
   overflow: hidden;
   background-clip: border-box;
@@ -126,11 +129,12 @@
   	padding: 10px;
   	border-style: double;
   	border-width: 15px;
-  	border-color: white;
+
+	border-color: white;
 }
 
 .column-6.quilt {
-	background: url(Images/quilt.jpg);;
+	background: url(Images/quilt.jpg);
   	background-attachment: scroll;
   	overflow: hidden;
   	background-clip: border-box;
