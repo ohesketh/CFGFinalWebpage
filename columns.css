@@ -97,18 +97,34 @@
 }
 
 .column-4.halloween {
-  background: url(images/halloweenback2.png);
+  background: url(images/halloweenback.png);
   background-attachment: scroll;
   overflow: hidden;
   background-clip: border-box;
-  background-repeat: repeat-y;
-  padding-left: 5px ;
+  padding: 10px ;
+  border-style: double;
+  border-width: 15px;
+  border-color: white;
 }
 
 .column-4.plush {
-	background: url(images/plush.png);
+	background-color: #ffb6c1;
 	background-attachment: scroll;
   	overflow: hidden;
   	background-clip: border-box;
-  	padding-left: 5px
+  	padding: 10px;
+  	border-style: double;
+  	border-width: 15px;
+  	border-color: white;
+}
+
+.column-4.laptop {
+	background-color: #98FB98;
+	background-attachment: scroll;
+  	overflow: hidden;
+  	background-clip: border-box;
+  	padding: 10px;
+  	border-style: double;
+  	border-width: 15px;
+  	border-color: white;
 }
