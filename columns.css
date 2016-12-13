@@ -128,3 +128,28 @@
   	border-width: 15px;
   	border-color: white;
 }
+
+.column-6.quilt {
+	background: url(images/quilt.jpg);;
+  	background-attachment: scroll;
+  	overflow: hidden;
+  	background-clip: border-box;
+  	padding: 10px ;
+  	border-style: double;
+  	border-width: 15px;
+  	border-color: white;
+}
+
+.column-6.pillow {
+	background: url(images/pillow.jpg);
+  	background-attachment: scroll;
+  	overflow: hidden;
+  	background-clip: border-box;
+  	padding: 10px ;
+  	border-style: double;
+  	border-width: 15px;
+  	border-color: white;
+}
+
+
+
