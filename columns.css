@@ -151,5 +151,28 @@
   	border-color: white;
 }
 
+.column-6.relax {
+	background-color: #F0E68C;
+  	background-attachment: scroll;
+  	overflow: hidden;
+  	background-clip: border-box;
+  	padding: 10px ;
+  	border-style: double;
+  	border-width: 15px;
+  	border-color: white;
+}
+
+.column-3.makedo {
+	background-color: #F4A460;
+  	background-attachment: scroll;
+  	overflow: hidden;
+  	background-clip: border-box;
+  	padding: 10px ;
+  	border-style: double;
+  	border-width: 15px;
+  	border-color: white;
+}
+
+
 
 
