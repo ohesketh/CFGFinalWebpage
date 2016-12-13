@@ -141,7 +141,7 @@
 }
 
 .column-6.pillow {
-	background: url(/images/pillow.jpg);
+	background: url(CFGFinalWebpage/images/pillow.jpg);
   	background-attachment: scroll;
   	overflow: hidden;
   	background-clip: border-box;
