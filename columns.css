@@ -97,7 +97,7 @@
 }
 
 .column-4.halloween {
-  background: url(../Images/halloweenback.png);
+  background: url(/Images/halloweenback.png);
   background-attachment: scroll;
   overflow: hidden;
   background-clip: border-box;
@@ -126,11 +126,12 @@
   	padding: 10px;
   	border-style: double;
   	border-width: 15px;
-  	border-color: white;
+
+	border-color: white;
 }
 
 .column-6.quilt {
-	background: url(Images/quilt.jpg);;
+	background: url(Images/quilt.jpg);
   	background-attachment: scroll;
   	overflow: hidden;
   	background-clip: border-box;
