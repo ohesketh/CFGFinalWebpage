@@ -98,15 +98,17 @@
 
 .column-4.halloween {
   background: url(images/halloweenback2.png);
-  background-attachment: fixed;
+  background-attachment: scroll;
   overflow: hidden;
   background-clip: border-box;
   background-repeat: repeat-y;
+  padding-left: 5px ;
 }
 
 .column-4.plush {
 	background: url(images/plush.png);
-	background-attachment: fixed;
+	background-attachment: scroll;
   	overflow: hidden;
   	background-clip: border-box;
+  	padding-left: 5px
 }
