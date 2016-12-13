@@ -41,6 +41,7 @@ html
 }
 
 body
+
 {
 	font-family: "Source Sans Pro", Arial, Verdana, Helvetica, sans-serif;
 	font-size: 18px;
@@ -51,6 +52,7 @@ body
 	text-rendering: optimizeLegibility;
 	vertical-align: baseline;
 }
+
 
 ::selection
 {
