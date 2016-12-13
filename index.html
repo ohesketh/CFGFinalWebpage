@@ -24,15 +24,17 @@ function showSlides(n) {
   var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+  for (i = 0; i < slides.length; i++) 
+      {slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+  for (i = 0; i < dots.length; i++) 
+      {dots[i].className = dots[i].className.replace("active", "");
   }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  dots[slideIndex-1].className += "active";
+
 }
+
 </script>
 
 
@@ -149,27 +151,6 @@ h2
 </div>
 	
 
-<div class="container clearfix">
-	<div id="footercont" class="bodycontainer clearfix">
-
-		<div class="grid">
-			<div class="column-10">
-				<div id="socialmedia" class="clearfix">
-					<ul>
-						<li><a title="" href="#" rel="external"><span class="fa fa-facebook"></span></a></li>
-						<li><a title="" href="#" rel="external"><span class="fa fa-twitter"></span></a></li>
-						<li><a title="" href="#" rel="external"><span class="fa fa-google-plus"></span></a></li>
-						<li><a title="" href="#" rel="external"><span class="fa fa-linkedin"></span></a></li>
-						<li><a title="" href="#" rel="external"><span class="fa fa-pinterest"></span></a></li>
-					</ul>
-
-			<div class="column-2 textright">
-				<p><a class="scrolltop" title="back to top" href="#pagetop"><span class="fa fa-angle-double-up"></span></a></p>
-			</div>
-		</div>
-
-	</div>
-</div>
 
  
 <br>
