@@ -97,7 +97,7 @@
 }
 
 .column-4.halloween {
-  background: url(/Images/halloweenback.png);
+  background: url(https://ohesketh.github.io/CFGFinalWebpage/Images/halloweenback.png);
   background-attachment: scroll;
   overflow: hidden;
   background-clip: border-box;
