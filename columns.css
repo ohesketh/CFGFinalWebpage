@@ -1,3 +1,6 @@
+/**This CSS file sets the widths etc of the columns we've used on the events and supplies pages. At the bottom, 
+we've used the second classes of the various events to put backgrounds behind that text**/
+
 [class*='column']
 {
 	float: left;

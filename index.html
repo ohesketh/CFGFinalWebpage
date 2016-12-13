@@ -76,6 +76,10 @@ h2
 }
 </style>
 <div class ='greeting'>
+
+<!-- Javascript: First set of script tags are to make the slideshow work. They make the 'next' and 'previous' buttons on the slideshow cycle through the pictures and they make the dots open the right images-->
+<!-- Javascripy: Second set of script tags are to create a dialogue box which asks the visitor for their name the first time they arrive on the site. This name is then used to create a 'welcome to the sew soc website, 'name'' message at the top of the page, centered. There is also a cookie which prevents the box coming up every time the index page is loaded - instead, the message reades 'welcome back, 'name'' if it's reloaded. This expires after a day-->
+
 <script>
 
 var slideIndex = 1;
@@ -110,7 +114,7 @@ function createCookie(name,value)
 {
 
       	var date = new Date();
-        date.setTime(date.getTime()+(24*60*60*1000)); //I've made the expiration of the cookie a day:24*60*60*1000
+        date.setTime(date.getTime()+(24*60*60*1000)); // made the expiration of the cookie a day:24*60*60*1000
         var expires = "; expires="+date.toGMTString();
     	document.cookie = name+"="+value+expires+"; path=/";
 }
@@ -146,6 +150,7 @@ else{
 </div>
 
 </div>
+<!-- currentSlide(1) ensures that the slideshow starts on the first slide when the body loads-->
 
 <body id="pagetop" onload="currentSlide(1)">
 <div class="container bgimg clearfix">
@@ -180,6 +185,8 @@ else{
 
         <p><strong>Since you're here, you must be interested in finding more about Sewing Society! If so, you've come to the right place. Here you'll find up to date information on all the events we run, along with help on buying supplies and getting in touch with us. </strong></em></p>
 		
+        <!--- code for the slideshow-->
+
         <div class="slideshow-container">
             <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
@@ -217,6 +224,7 @@ else{
 	</div>
 </div>
 
+<!-- Social Media buttons-->
 
 <div>
 	<a href="https://uk.pinterest.com/wewillresurrect/dusewsoc/?fb_ref=d62502c01cf54e53a62bc92b07e22183%3A105039b75b568f594de7">

@@ -1,4 +1,13 @@
 <?php
+    
+    $name = $_POST['name'];
+      $email=$_POST['email'];     $message=$_POST['message'];
+    mail("sew.soc@durham.ac.uk", $subject, $message);
+    
+    
+  ?>
+
+<?php
 if(isset($_POST['email'])) {
      
     
