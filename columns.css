@@ -97,7 +97,7 @@
 }
 
 .column-4.halloween {
-  background: url(images/halloweenback.png);
+  background: url(/images/halloweenback.png);
   background-attachment: scroll;
   overflow: hidden;
   background-clip: border-box;
@@ -130,7 +130,7 @@
 }
 
 .column-6.quilt {
-	background: url(images/quilt.jpg);;
+	background: url(/images/quilt.jpg);;
   	background-attachment: scroll;
   	overflow: hidden;
   	background-clip: border-box;
@@ -141,7 +141,7 @@
 }
 
 .column-6.pillow {
-	background: url(images/pillow.jpg);
+	background: url(/images/pillow.jpg);
   	background-attachment: scroll;
   	overflow: hidden;
   	background-clip: border-box;
